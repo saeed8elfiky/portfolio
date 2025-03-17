@@ -1,75 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cybersecurity Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 
-    <header>
-        <div class="container">
-            <h1 class="glow">Saeed Ashruf Elfiky</h1>
-            <h2>Cybersecurity Enthusiast & Penetration Tester</h2>
-            <nav>
-                <ul>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+/* Header */
+header {
+    background: linear-gradient(135deg, #000428, #004e92);
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
 
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="card">
-                <h3>Malware Analysis Lab</h3>
-                <p>Setting up and researching malware analysis techniques.</p>
-            </div>
-            <div class="card">
-                <h3>Penetration Testing Lab</h3>
-                <p>Exploiting vulnerabilities in a simulated environment.</p>
-            </div>
-        </div>
-    </section>
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
 
-    <section id="certifications" class="section">
-        <div class="container">
-            <h2>Certifications</h2>
-            <ul>
-                <li>CompTIA Network+</li>
-                <li>Certified Ethical Hacker (CEH) - In Progress</li>
-            </ul>
-        </div>
-    </section>
+header h2 {
+    font-size: 1.2rem;
+    color: #a1c4fd;
+}
 
-    <section id="skills" class="section">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill">Penetration Testing</div>
-                <div class="skill">Malware Analysis</div>
-                <div class="skill">Cybersecurity Awareness</div>
-                <div class="skill">Networking Fundamentals</div>
-                <div class="skill">Metasploit & Cyber Attack Simulation</div>
-            </div>
-        </div>
-    </section>
+.glow {
+    color: #00ffcc;
+    text-shadow: 0 0 15px #00ffcc, 0 0 30px #00ffcc;
+}
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:saeedelfikybusiness@gmail.com">saeedelfikybusiness@gmail.com</a></p>
-            <p>
-                <a href="https://linkedin.com" target="_blank">LinkedIn</a> |
-                <a href="https://github.com/saeedelfiky" target="_blank">GitHub</a>
-            </p>
-        </div>
-    </section>
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
 
-</body>
-</html>
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00ffcc;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Sections */
+.section {
+    padding: 60px 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Project Cards */
+.card {
+    background: rgba(0, 255, 204, 0.1);
+    border: 1px solid #00ffcc;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background: rgba(0, 255, 204, 0.2);
+    transform: scale(1.05);
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skill {
+    background: rgba(0, 255, 204, 0.1);
+    border: 1px solid #00ffcc;
+    padding: 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    background: rgba(0, 255, 204, 0.2);
+}
+
+/* Contact Links */
+a {
+    color: #00ffcc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ffcc00;
+}
