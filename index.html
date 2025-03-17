@@ -8,12 +8,17 @@
 </head>
 <body>
 
+    <!-- HEADER SECTION -->
     <header>
         <div class="container">
-            <h1 class="glow">Saeed Ashruf Elfiky</h1>
-            <h2>Cybersecurity Enthusiast & Penetration Tester</h2>
+            <div class="profile">
+                <img src="profile.jpg" alt="Profile Picture">
+                <h1>Saeed Ashruf Elfiky</h1>
+                <h2>Cybersecurity Enthusiast & Penetration Tester</h2>
+            </div>
             <nav>
                 <ul>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#certifications">Certifications</a></li>
                     <li><a href="#skills">Skills</a></li>
@@ -23,20 +28,48 @@
         </div>
     </header>
 
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Passionate about cybersecurity, ethical hacking, and malware analysis. I specialize in penetration testing, vulnerability assessment, and digital forensics.</p>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
     <section id="projects" class="section">
         <div class="container">
             <h2>Projects</h2>
-            <div class="card">
-                <h3>Malware Analysis Lab</h3>
-                <p>Setting up and researching malware analysis techniques.</p>
-            </div>
-            <div class="card">
-                <h3>Penetration Testing Lab</h3>
-                <p>Exploiting vulnerabilities in a simulated environment.</p>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="card">
+                    <h3>Cybersecurity Lab: Vulnerability Exploitation & Penetration Testing</h3>
+                    <p>Set up Metasploitable 2 to simulate cyberattacks and exploit vulnerabilities using Metasploit and Nmap.</p>
+                    <ul>
+                        <li>Conducted penetration testing on a virtualized network using VirtualBox.</li>
+                        <li>Configured a Windows Server for Active Directory, DNS, and DHCP services.</li>
+                        <li>Simulated enterprise-level networking scenarios in Cisco Packet Tracer.</li>
+                        <li>Troubleshot security misconfigurations in a Windows/Linux hybrid environment.</li>
+                    </ul>
+                    <p><strong>Technologies Used:</strong> Metasploit, Nmap, VirtualBox, Windows Server, Cisco Packet Tracer</p>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card">
+                    <h3>Malware Analysis Lab Setup & Research</h3>
+                    <p>Designed and deployed an isolated malware analysis environment using VirtualBox/VMware.</p>
+                    <ul>
+                        <li>Configured virtual machines with Windows/Linux and set up network segmentation for safe analysis.</li>
+                        <li>Used tools like IDA Pro, Ghidra, Wireshark, and Sysinternals for dynamic and static analysis.</li>
+                        <li>Analyzed real-world malware samples and documented findings.</li>
+                    </ul>
+                    <p><strong>Technologies Used:</strong> VirtualBox, VMware, IDA Pro, Ghidra, Wireshark, Sysinternals</p>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- CERTIFICATIONS SECTION -->
     <section id="certifications" class="section">
         <div class="container">
             <h2>Certifications</h2>
@@ -47,6 +80,7 @@
         </div>
     </section>
 
+    <!-- SKILLS SECTION -->
     <section id="skills" class="section">
         <div class="container">
             <h2>Skills</h2>
@@ -60,6 +94,7 @@
         </div>
     </section>
 
+    <!-- CONTACT SECTION -->
     <section id="contact" class="section">
         <div class="container">
             <h2>Contact</h2>
