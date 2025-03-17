@@ -28,7 +28,7 @@ header h2 {
 
 .glow {
     color: #00ffcc;
-    text-shadow: 0 0 15px #00ffcc, 0 0 30px #00ffcc;
+    text-shadow: 0 0 00px #00ffcc, 0 0 00px #00ffcc;
 }
 
 /* Navigation */
