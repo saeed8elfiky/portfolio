@@ -1,110 +1,75 @@
-/* Cybersecurity & Malware-Themed Portfolio */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-/* General Page Styles */
-body {
-    font-family: 'Courier New', monospace;
-    background-color: #0a0a0a;
-    color: #00ff00;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
+    <header>
+        <div class="container">
+            <h1 class="glow">Saeed Ashruf Elfiky</h1>
+            <h2>Cybersecurity Enthusiast & Penetration Tester</h2>
+            <nav>
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-/* Header */
-header {
-    background: #000;
-    padding: 20px;
-    border-bottom: 2px solid #00ff00;
-}
-header h1 {
-    font-size: 36px;
-    color: #00ff00;
-    text-shadow: 0px 0px 10px #00ff00;
-}
-header h2 {
-    font-size: 18px;
-    color: #1abc9c;
-    text-shadow: 0px 0px 5px #1abc9c;
-}
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="card">
+                <h3>Malware Analysis Lab</h3>
+                <p>Setting up and researching malware analysis techniques.</p>
+            </div>
+            <div class="card">
+                <h3>Penetration Testing Lab</h3>
+                <p>Exploiting vulnerabilities in a simulated environment.</p>
+            </div>
+        </div>
+    </section>
 
-/* Navigation Bar */
-nav {
-    background: #111;
-    padding: 10px 0;
-    border-bottom: 2px solid #00ff00;
-}
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-nav ul li {
-    display: inline;
-}
-nav ul li a {
-    text-decoration: none;
-    color: #00ff00;
-    font-weight: bold;
-    padding: 10px 15px;
-    transition: 0.3s;
-}
-nav ul li a:hover {
-    background: #00ff00;
-    color: black;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px #00ff00;
-}
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2>Certifications</h2>
+            <ul>
+                <li>CompTIA Network+</li>
+                <li>Certified Ethical Hacker (CEH) - In Progress</li>
+            </ul>
+        </div>
+    </section>
 
-/* Sections */
-section {
-    width: 80%;
-    margin: 30px auto;
-    padding: 20px;
-    background: #111;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.5);
-    border: 1px solid #00ff00;
-}
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">Penetration Testing</div>
+                <div class="skill">Malware Analysis</div>
+                <div class="skill">Cybersecurity Awareness</div>
+                <div class="skill">Networking Fundamentals</div>
+                <div class="skill">Metasploit & Cyber Attack Simulation</div>
+            </div>
+        </div>
+    </section>
 
-/* Section Titles */
-h3 {
-    font-size: 24px;
-    text-decoration: underline;
-    text-shadow: 0px 0px 5px #00ff00;
-}
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:saeedelfikybusiness@gmail.com">saeedelfikybusiness@gmail.com</a></p>
+            <p>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/saeedelfiky" target="_blank">GitHub</a>
+            </p>
+        </div>
+    </section>
 
-/* Lists */
-ul {
-    list-style: none;
-    padding: 0;
-}
-ul li {
-    font-size: 18px;
-    padding: 8px;
-}
-
-/* Links */
-a {
-    color: #00ff00;
-    text-decoration: none;
-    transition: 0.3s;
-}
-a:hover {
-    color: black;
-    background: #00ff00;
-    padding: 5px;
-    border-radius: 5px;
-    text-shadow: 0px 0px 10px #00ff00;
-}
-
-/* Footer */
-footer {
-    background: #000;
-    color: #00ff00;
-    padding: 10px;
-    margin-top: 20px;
-    border-top: 2px solid #00ff00;
-    text-shadow: 0px 0px 5px #00ff00;
-}
+</body>
+</html>
