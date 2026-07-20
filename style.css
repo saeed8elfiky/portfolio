@@ -450,12 +450,19 @@ ul { margin: 0; padding: 0; list-style: none; }
   display: grid;
   grid-template-columns: 2fr 1fr auto;
   gap: 12px;
-  align-items: center;
+  align-items: flex-start;
   padding: 14px 0;
   border-bottom: 1px solid var(--border);
 }
 
+.cert-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
 .cert-name { font-weight: 500; font-size: 0.95rem; }
+.cert-desc { margin: 0; font-size: 0.85rem; color: var(--text-soft); line-height: 1.4; }
 .cert-issuer { color: var(--text-soft); font-size: 0.88rem; }
 .cert-hours {
   font-family: var(--font-mono);
