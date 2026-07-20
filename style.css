@@ -161,6 +161,16 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .hero-inner { max-width: 760px; }
 
+.hero-avatar {
+  display: block;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  box-shadow: 0 6px 18px rgba(30, 69, 133, 0.18);
+  margin-bottom: 20px;
+}
+
 .status-tag {
   display: inline-flex;
   align-items: center;
