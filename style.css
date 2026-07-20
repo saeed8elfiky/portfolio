@@ -532,3 +532,105 @@ a:focus-visible, button:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
 }
+
+/* Active navigation link */
+.nav-links a.active {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* Disabled project links */
+.project-link.disabled {
+  color: var(--text-faint);
+  cursor: default;
+  font-style: italic;
+}
+.project-link.disabled:hover {
+  text-decoration: none;
+}
+
+/* Copy button for contact card */
+.contact-card-email {
+  position: relative;
+}
+.email-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.email-link {
+  word-break: break-all;
+}
+.btn-copy {
+  background: none;
+  border: none;
+  color: var(--text-soft);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.btn-copy:hover {
+  background-color: var(--bg-alt);
+  color: var(--text);
+}
+.btn-copy .tooltip {
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  background-color: var(--text);
+  color: var(--surface);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  z-index: 10;
+}
+.btn-copy:hover .tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Back to Top button */
+.back-to-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s, border-color 0.15s ease, background-color 0.15s ease;
+  z-index: 99;
+}
+.back-to-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.back-to-top:hover {
+  border-color: var(--accent);
+  background-color: var(--bg-alt);
+  color: var(--accent);
+}
+

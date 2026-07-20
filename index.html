@@ -49,7 +49,7 @@
         <p class="hero-title">SOC Engineer — Threat Detection, SIEM Engineering &amp; Security Automation</p>
         <p class="hero-summary">
           I monitor, detect, and respond to threats across enterprise environments — building SIEM
-          pipelines in ELK and Wazuh, tuning detection logic against MITRE ATT&amp;CK, and automating
+          pipelines in ELK, tuning detection logic against MITRE ATT&amp;CK, and automating
           incident response with SOAR workflows that have cut response time by 40%.
         </p>
         <div class="hero-actions">
@@ -321,6 +321,7 @@
               <span class="tag">Case Management</span>
               <span class="tag">FortiGate API</span>
             </div>
+            <span class="project-link disabled">Internal Enterprise Implementation</span>
           </article>
 
           <article class="project-card">
@@ -336,6 +337,7 @@
               <span class="tag">OWASP CRS</span>
               <span class="tag">Nginx</span>
             </div>
+            <span class="project-link disabled">Internal Enterprise Implementation</span>
           </article>
 
         </div>
@@ -402,10 +404,21 @@
           on GitHub.
         </p>
         <div class="contact-grid">
-          <a href="mailto:saeedelfikybusiness@gmail.com" class="contact-card">
+          <div class="contact-card contact-card-email">
             <span class="about-label">Email</span>
-            <span class="about-value">saeedelfikybusiness@gmail.com</span>
-          </a>
+            <div class="email-wrapper">
+              <a href="mailto:saeedelfikybusiness@gmail.com"
+                class="about-value email-link">saeedelfikybusiness@gmail.com</a>
+              <button class="btn-copy" id="copyEmail" aria-label="Copy email address" title="Copy to clipboard">
+                <svg class="icon-copy" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span class="tooltip" id="copyTooltip">Copy</span>
+              </button>
+            </div>
+          </div>
           <a href="https://github.com/saeed8elfiky" target="_blank" rel="noopener" class="contact-card">
             <span class="about-label">GitHub</span>
             <span class="about-value">github.com/saeed8elfiky</span>
@@ -425,8 +438,16 @@
   </main>
 
   <footer class="footer">
-    <p>© <span id="year"></span> Saeed Ashraf Elfiky. Built and deployed from the command line.</p>
+    <p>© <span id="year"></span> Saeed Ashraf Elfiky.</p>
   </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
 
   <script src="script.js"></script>
 </body>
