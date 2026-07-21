@@ -44,22 +44,37 @@ if (prefersReducedMotion) {
 const sections = document.querySelectorAll('section[id]');
 const navLinkElements = document.querySelectorAll('.nav-links a');
 
-const navObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const id = entry.target.getAttribute('id');
-      navLinkElements.forEach(link => {
-        if (link.getAttribute('href') === `#${id}`) {
-          link.classList.add('active');
-        } else {
-          link.classList.remove('active');
-        }
-      });
+function updateActiveNavLink() {
+  let currentActive = '';
+  
+  // Check if user has scrolled to the bottom of the page
+  const isAtBottom = (window.innerHeight + window.scrollY) >= (document.documentElement.scrollHeight - 50);
+  
+  if (isAtBottom && sections.length > 0) {
+    currentActive = sections[sections.length - 1].getAttribute('id');
+  } else {
+    sections.forEach(section => {
+      const rect = section.getBoundingClientRect();
+      // If the top of the section is above 150px from the top of the viewport (accounting for sticky nav)
+      if (rect.top <= 150) {
+        currentActive = section.getAttribute('id');
+      }
+    });
+  }
+
+  navLinkElements.forEach(link => {
+    const href = link.getAttribute('href');
+    if (href === `#${currentActive}`) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
     }
   });
-}, { threshold: 0.2, rootMargin: '-10% 0px -70% 0px' });
+}
 
-sections.forEach(section => navObserver.observe(section));
+window.addEventListener('scroll', updateActiveNavLink);
+window.addEventListener('resize', updateActiveNavLink);
+updateActiveNavLink();
 
 // Copy email address to clipboard
 const copyEmailBtn = document.getElementById('copyEmail');
