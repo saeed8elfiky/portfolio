@@ -48,7 +48,8 @@
           SESSION ACTIVE — CAIRO, EG
         </div>
         <h1 class="hero-name">Saeed Ashraf Elfiky</h1>
-        <p class="hero-title">SOC Engineer — Threat Detection, SIEM Engineering &amp; Security Automation</p>
+        <p class="hero-title" aria-label="SOC Engineer — Threat Detection, SIEM Engineering &amp; Security Automation">
+          <span id="typewriter" aria-hidden="true"></span></p>
         <p class="hero-summary">
           I monitor, detect, and respond to threats across enterprise environments — building SIEM
           pipelines in ELK, tuning detection logic against MITRE ATT&amp;CK, and automating
@@ -59,6 +60,17 @@
             GitHub</a>
           <a href="https://www.linkedin.com/in/saeed-elfiky" target="_blank" rel="noopener"
             class="btn btn-ghost">LinkedIn</a>
+          <a href="https://tryhackme.com/p/saeed8elfiky" target="_blank" rel="noopener"
+            class="btn btn-ghost">TryHackMe</a>
+          <a href="Saeed_Elfiky_Resume.pdf" download class="btn btn-ghost btn-download">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            Download CV
+          </a>
           <a href="#contact" class="btn btn-ghost">Get in touch</a>
         </div>
       </div>
@@ -248,9 +260,16 @@
         <p class="eyebrow">04 — CASE FILES</p>
         <h2 class="section-title">Projects</h2>
 
-        <div class="project-grid">
+        <div class="filter-bar" role="tablist" aria-label="Filter projects by category">
+          <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-filter="python" role="tab" aria-selected="false">Python</button>
+          <button class="filter-btn" data-filter="elk" role="tab" aria-selected="false">ELK</button>
+          <button class="filter-btn" data-filter="soar" role="tab" aria-selected="false">SOAR</button>
+        </div>
 
-          <article class="project-card">
+        <div class="project-grid" id="projectGrid">
+
+          <article class="project-card" data-category="python">
             <div class="project-head">
               <h3>Nyx</h3>
               <span class="tag tag-mono">Python</span>
@@ -267,7 +286,7 @@
               repository →</a>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-category="python">
             <div class="project-head">
               <h3>Gargantua</h3>
               <span class="tag tag-mono">Python</span>
@@ -284,7 +303,7 @@
               repository →</a>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-category="elk">
             <div class="project-head">
               <h3>Enterprise SOC Implementation</h3>
               <span class="tag tag-mono">ELK · Elastic Defend</span>
@@ -304,7 +323,7 @@
               target="_blank" rel="noopener" class="project-link">View repository →</a>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-category="elk">
             <div class="project-head">
               <h3>Advanced Threat Detection &amp; Rule Engineering</h3>
               <span class="tag tag-mono">KQL · EQL · ES|QL</span>
@@ -322,7 +341,7 @@
               target="_blank" rel="noopener" class="project-link">View repository →</a>
           </article>
 
-          <article class="project-card">
+          <article class="project-card" data-category="soar">
             <div class="project-head">
               <h3>Automated SOC Incident Response Workflow</h3>
               <span class="tag tag-mono">n8n · SOAR</span>
@@ -544,6 +563,14 @@
             <span class="about-label">Location</span>
             <span class="about-value">Cairo, Egypt</span>
           </div>
+          <a href="https://tryhackme.com/p/saeed8elfiky" target="_blank" rel="noopener" class="contact-card">
+            <span class="about-label">TryHackMe</span>
+            <span class="about-value">p/saeed8elfiky</span>
+          </a>
+          <a href="https://app.hackthebox.com/profile/saeed8elfiky" target="_blank" rel="noopener" class="contact-card">
+            <span class="about-label">HackTheBox</span>
+            <span class="about-value">saeed8elfiky</span>
+          </a>
         </div>
       </div>
     </section>

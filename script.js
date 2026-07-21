@@ -141,3 +141,100 @@ if (backToTopBtn) {
   });
 }
 
+// Typewriter animation on hero title
+const typewriterEl = document.getElementById('typewriter');
+if (typewriterEl) {
+  if (prefersReducedMotion) {
+    typewriterEl.textContent = 'SOC Engineer';
+  } else {
+    const phrases = [
+      'SOC Engineer',
+      'SIEM Engineer',
+      'Detection Engineer',
+      'Security Automation Engineer',
+    ];
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function typeWriter() {
+      const currentPhrase = phrases[phraseIndex];
+      if (isDeleting) {
+        charIndex--;
+        typewriterEl.textContent = currentPhrase.substring(0, charIndex);
+        if (charIndex === 0) {
+          isDeleting = false;
+          phraseIndex = (phraseIndex + 1) % phrases.length;
+          setTimeout(typeWriter, 400);
+          return;
+        }
+        setTimeout(typeWriter, 35);
+      } else {
+        charIndex++;
+        typewriterEl.textContent = currentPhrase.substring(0, charIndex);
+        if (charIndex === currentPhrase.length) {
+          isDeleting = true;
+          setTimeout(typeWriter, 1800);
+          return;
+        }
+        setTimeout(typeWriter, 60);
+      }
+    }
+    typeWriter();
+  }
+}
+
+// Project filtering
+const filterBtns = document.querySelectorAll('.filter-btn');
+const projectCards = document.querySelectorAll('.project-card');
+
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => {
+      b.classList.remove('is-active');
+      b.setAttribute('aria-selected', 'false');
+    });
+    btn.classList.add('is-active');
+    btn.setAttribute('aria-selected', 'true');
+
+    const filter = btn.getAttribute('data-filter');
+    projectCards.forEach(card => {
+      if (filter === 'all' || card.getAttribute('data-category') === filter) {
+        card.classList.remove('is-hidden');
+        card.classList.add('is-visible');
+      } else {
+        card.classList.add('is-hidden');
+      }
+    });
+  });
+});
+
+// Cert issuer favicon badges
+const certIssuerMap = {
+  'EC-Council': 'eccouncil.org',
+  'NTI': 'nti.sci.eg',
+  'WE INNOVATE': 'weareinnovate.org',
+  'Netriders': 'netriders.net',
+  'AWS': 'aws.amazon.com',
+  'Fortinet': 'fortinet.com',
+  'SWISS': 'swiss-learn.com',
+  'ITIDA': 'itida.gov.eg',
+  'Red Team Leaders': 'redteamleaders.com',
+  'ArcX': 'arcx.io'
+};
+
+document.querySelectorAll('.cert-issuer').forEach(issuerEl => {
+  const text = issuerEl.textContent.trim();
+  const key = Object.keys(certIssuerMap).find(k => text.includes(k));
+  if (key) {
+    const img = document.createElement('img');
+    img.src = `https://www.google.com/s2/favicons?domain=${certIssuerMap[key]}&sz=16`;
+    img.alt = '';
+    img.setAttribute('aria-hidden', 'true');
+    img.width = 16;
+    img.height = 16;
+    img.className = 'cert-badge-img';
+    img.onerror = () => { img.style.display = 'none'; };
+    issuerEl.insertBefore(img, issuerEl.firstChild);
+  }
+});

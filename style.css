@@ -463,7 +463,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .cert-name { font-weight: 500; font-size: 0.95rem; }
 .cert-desc { margin: 0; font-size: 0.85rem; color: var(--text-soft); line-height: 1.4; }
-.cert-issuer { color: var(--text-soft); font-size: 0.88rem; }
+.cert-issuer { color: var(--text-soft); font-size: 0.88rem; display: inline-flex; align-items: center; gap: 6px; }
+.cert-badge-img { width: 16px; height: 16px; border-radius: 3px; object-fit: contain; flex-shrink: 0; }
 .cert-hours {
   font-family: var(--font-mono);
   font-size: 0.78rem;
@@ -485,7 +486,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
   gap: 16px;
 }
 
@@ -732,4 +733,62 @@ a:focus-visible, button:focus-visible {
   color: var(--text-faint);
   cursor: default;
   font-style: italic;
+}
+
+/* ===== Download CV Button ===== */
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+/* ===== Typewriter cursor ===== */
+#typewriter::after {
+  content: '|';
+  color: var(--accent);
+  font-weight: 300;
+  margin-left: 1px;
+  animation: blink-cursor 0.75s step-end infinite;
+}
+
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* ===== Project Filter Bar ===== */
+.filter-bar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.filter-btn {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  padding: 6px 16px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text-soft);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-weight: 500;
+}
+
+.filter-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent-dark);
+}
+
+.filter-btn.is-active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.project-card.is-hidden {
+  display: none;
 }
