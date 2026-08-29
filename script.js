@@ -19,7 +19,7 @@ navLinks.querySelectorAll('a').forEach(link => {
 
 // Scroll reveal
 const revealTargets = document.querySelectorAll(
-  '.about-card, .skill-group, .tl-entry, .project-card, .writeup-card, .cert-row, .contact-card'
+  '.about-card, .service-card, .skill-group, .tl-entry, .project-card, .writeup-card, .cert-row, .contact-card'
 );
 revealTargets.forEach(el => el.classList.add('reveal'));
 
@@ -237,4 +237,38 @@ document.querySelectorAll('.cert-issuer').forEach(issuerEl => {
     img.onerror = () => { img.style.display = 'none'; };
     issuerEl.insertBefore(img, issuerEl.firstChild);
   }
+});
+
+// Service modal open/close
+const serviceLinks = document.querySelectorAll('.service-link');
+const serviceModals = document.querySelectorAll('.service-modal');
+
+serviceLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    const modalId = link.getAttribute('data-modal');
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+  });
+});
+
+function closeAllModals() {
+  serviceModals.forEach(modal => {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+  });
+  document.body.style.overflow = '';
+}
+
+serviceModals.forEach(modal => {
+  modal.querySelectorAll('[data-close]').forEach(el => {
+    el.addEventListener('click', closeAllModals);
+  });
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeAllModals();
 });
