@@ -272,6 +272,97 @@ ul { margin: 0; padding: 0; list-style: none; }
   color: var(--text);
 }
 
+/* ===== Services ===== */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.service-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.service-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.service-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.service-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  margin: 0 0 10px;
+}
+
+.service-card p {
+  color: var(--text-soft);
+  font-size: 0.92rem;
+  margin: 0 0 18px;
+  flex-grow: 1;
+  line-height: 1.5;
+}
+
+.service-card .tag-row {
+  border-top: 1px solid var(--border);
+  padding-top: 14px;
+}
+
+.service-deliverables {
+  margin-bottom: 18px;
+}
+
+.service-deliverables-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+
+.service-deliverables ul {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.service-deliverables li {
+  position: relative;
+  padding-left: 16px;
+  color: var(--text-soft);
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+.service-deliverables li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0.5;
+}
+
 /* ===== Skills ===== */
 .skills-grid {
   display: grid;
@@ -523,6 +614,7 @@ a.contact-card:hover { border-color: var(--accent); }
 /* ===== Responsive ===== */
 @media (max-width: 860px) {
   .about-grid { grid-template-columns: 1fr; }
+  .services-grid { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
   .project-grid { grid-template-columns: 1fr; }
   .writeups-grid { grid-template-columns: 1fr; }

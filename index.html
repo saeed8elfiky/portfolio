@@ -24,6 +24,7 @@
       <a href="#top" class="nav-brand">S.<span>Elfiky</span></a>
       <nav class="nav-links">
         <a href="#about">About</a>
+        <a href="#services">Services</a>
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
@@ -84,9 +85,14 @@
         <p class="eyebrow">01 — SUMMARY</p>
         <h2 class="section-title">Defensive security, built from the log up</h2>
         <p class="section-body">
-          I specialize in the design, implementation, and long-term operation of enterprise security monitoring platforms. My work centers on building SIEM environments that give a security operations team real, actionable visibility — not just log storage — and on automating the repetitive work of triage and response so analysts can focus on genuine threats.
-I am completing a degree in Electronics and Communication Engineering, and work as a SOC Engineer / SOC Admin alongside independent consulting engagements.
-My delivery experience includes multiple end-to-end SIEM implementations for insurance-sector clients, from initial sizing and architecture through go-live and extended post-launch support.
+          I specialize in the design, implementation, and long-term operation of enterprise security monitoring
+          platforms. My work centers on building SIEM environments that give a security operations team real, actionable
+          visibility — not just log storage — and on automating the repetitive work of triage and response so analysts
+          can focus on genuine threats.
+          I am completing a degree in Electronics and Communication Engineering, and work as a SOC Engineer / SOC Admin
+          alongside independent consulting engagements.
+          My delivery experience includes multiple end-to-end SIEM implementations for insurance-sector clients, from
+          initial sizing and architecture through go-live and extended post-launch support.
         </p>
         <div class="about-grid">
           <div class="about-card">
@@ -106,10 +112,149 @@ My delivery experience includes multiple end-to-end SIEM implementations for ins
       </div>
     </section>
 
+    <!-- SERVICES -->
+    <section class="section section-alt" id="services">
+      <div class="section-inner">
+        <p class="eyebrow">02 — SERVICES</p>
+        <h2 class="section-title">What I do</h2>
+        <p class="section-body">
+          End-to-end security operations services — from architecture and deployment to detection engineering and
+          analyst training.
+        </p>
+
+        <div class="services-grid">
+
+          <div class="service-card">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3>SIEM Engineering &amp; Implementation</h3>
+            <p>End-to-end SIEM deployment for enterprises — from initial architecture and sizing through go-live and
+              post-launch support. I build centralized log pipelines that ingest firewall, endpoint, AD, and application
+              logs into a single platform with custom Kibana dashboards and retention policies. Includes EDR agent
+              deployment, Fleet Server configuration, and multi-source log integration.</p>
+            <div class="service-deliverables">
+              <p class="service-deliverables-label">What's included</p>
+              <ul>
+                <li>Architecture design &amp; capacity planning</li>
+                <li>ELK Stack / Wazuh / Splunk deployment</li>
+                <li>Firewall, AD &amp; endpoint log integration</li>
+                <li>Custom dashboards &amp; retention policies</li>
+                <li>Post-launch tuning &amp; ongoing support</li>
+              </ul>
+            </div>
+            <div class="tag-row">
+              <span class="tag">ELK Stack</span>
+              <span class="tag">Wazuh</span>
+              <span class="tag">Log Pipelines</span>
+              <span class="tag">Fleet Server</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3>Detection Engineering</h3>
+            <p>Custom detection rules built on the Elastic Security Detection Engine — validated against MITRE ATT&CK
+              and tested with Atomic Red Team simulations. Covers brute-force, privilege escalation, lateral movement,
+              and Active Directory attacks. Tuned to minimize false positives while preserving real threat signal.</p>
+            <div class="service-deliverables">
+              <p class="service-deliverables-label">What's included</p>
+              <ul>
+                <li>Custom KQL / EQL / ES|QL detection rules</li>
+                <li>MITRE ATT&CK mapping &amp; coverage analysis</li>
+                <li>Atomic Red Team validation &amp; testing</li>
+                <li>False positive tuning &amp; correlation logic</li>
+                <li>Correlation rules for multi-stage attacks</li>
+              </ul>
+            </div>
+            <div class="tag-row">
+              <span class="tag">MITRE ATT&amp;CK</span>
+              <span class="tag">Sigma Rules</span>
+              <span class="tag">KQL/EQL</span>
+              <span class="tag">Atomic Red Team</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3>SOAR Automation</h3>
+            <p>Automated incident response workflows using n8n, FortiGate API, and Elasticsearch API — from alert
+              correlation and case management to dynamic host quarantine. Reduces mean time to respond by automating
+              repetitive triage tasks so analysts focus on real investigations.</p>
+            <div class="service-deliverables">
+              <p class="service-deliverables-label">What's included</p>
+              <ul>
+                <li>n8n workflow &amp; playbook development</li>
+                <li>Alert correlation &amp; case management</li>
+                <li>FortiGate API host quarantine scripts</li>
+                <li>Threat intelligence platform integration</li>
+                <li>Automated notification &amp; escalation flows</li>
+              </ul>
+            </div>
+            <div class="tag-row">
+              <span class="tag">n8n</span>
+              <span class="tag">FortiGate API</span>
+              <span class="tag">Playbooks</span>
+              <span class="tag">Alert Correlation</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3>SOC Training &amp; Consulting</h3>
+            <p>Hands-on training programs for IT and security teams — covering SOC workflows, alert triage, log
+              analysis, and incident response procedures. Scenarios are tailored to the client's environment and threat
+              landscape, with practical exercises using real attack simulations.</p>
+            <div class="service-deliverables">
+              <p class="service-deliverables-label">What's included</p>
+              <ul>
+                <li>Customized SOC training curriculum</li>
+                <li>Hands-on alert triage &amp; investigation labs</li>
+                <li>Real-world threat scenario exercises</li>
+                <li>Incident response playbook workshops</li>
+                <li>Post-training documentation &amp; follow-up</li>
+              </ul>
+            </div>
+            <div class="tag-row">
+              <span class="tag">SOC Training</span>
+              <span class="tag">Workshops</span>
+              <span class="tag">Consulting</span>
+              <span class="tag">Incident Response</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- SKILLS -->
     <section class="section section-alt" id="skills">
       <div class="section-inner">
-        <p class="eyebrow">02 — STACK</p>
+        <p class="eyebrow">03 — STACK</p>
         <h2 class="section-title">Tools &amp; technologies</h2>
         <div class="skills-grid">
 
@@ -202,7 +347,7 @@ My delivery experience includes multiple end-to-end SIEM implementations for ins
     <!-- EXPERIENCE -->
     <section class="section" id="experience">
       <div class="section-inner">
-        <p class="eyebrow">03 — LOG</p>
+        <p class="eyebrow">04 — LOG</p>
         <h2 class="section-title">Experience</h2>
 
         <div class="timeline">
@@ -275,7 +420,7 @@ My delivery experience includes multiple end-to-end SIEM implementations for ins
     <!-- PROJECTS -->
     <section class="section section-alt" id="projects">
       <div class="section-inner">
-        <p class="eyebrow">04 — CASE FILES</p>
+        <p class="eyebrow">05 — CASE FILES</p>
         <h2 class="section-title">Projects</h2>
 
         <div class="filter-bar" role="tablist" aria-label="Filter projects by category">
@@ -383,7 +528,7 @@ My delivery experience includes multiple end-to-end SIEM implementations for ins
     <!-- WRITEUPS -->
     <section class="section" id="writeups">
       <div class="section-inner">
-        <p class="eyebrow">05 — WRITEUPS</p>
+        <p class="eyebrow">06 — WRITEUPS</p>
         <h2 class="section-title">Technical Guides &amp; Incident Reports</h2>
         <p class="section-body">
           Documentation of security configurations, step-by-step integration playbooks, and writeups from threat hunting
@@ -427,7 +572,7 @@ My delivery experience includes multiple end-to-end SIEM implementations for ins
     <!-- CERTIFICATIONS -->
     <section class="section" id="certs">
       <div class="section-inner">
-        <p class="eyebrow">06 — CREDENTIALS</p>
+        <p class="eyebrow">07 — CREDENTIALS</p>
         <h2 class="section-title">Certifications &amp; training</h2>
 
         <div class="cert-list">
@@ -555,7 +700,7 @@ My delivery experience includes multiple end-to-end SIEM implementations for ins
     <!-- CONTACT -->
     <section class="section section-contact" id="contact">
       <div class="section-inner">
-        <p class="eyebrow">07 — CONTACT</p>
+        <p class="eyebrow">08 — CONTACT</p>
         <h2 class="section-title">Let’s talk security</h2>
         <p class="section-body">
           Open to SOC engineering, SIEM, detection engineering, and security automation opportunities.
