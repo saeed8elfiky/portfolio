@@ -1,0 +1,88 @@
+**Title:**
+I will guide you through cybersecurity labs and explain the solutions
+
+**Service Description:**
+
+Are you struggling with a cybersecurity lab and don't know where to start?
+
+I will help you understand and complete cybersecurity labs step by step, while explaining the reasoning and analysis process instead of simply giving you the answers.
+
+I can help you with labs related to:
+
+* SOC & Blue Team
+* SIEM
+* Log Analysis
+* Windows Security
+* Network Security
+* Incident Response
+* Digital Forensics
+* Threat Detection
+* Cybersecurity Fundamentals
+
+**What the service includes:**
+
+* Understanding and analyzing the lab requirements.
+* Explaining the tools and commands used.
+* Explaining how to analyze logs and evidence.
+* Understanding the attack or security scenario.
+* Step-by-step guidance during the investigation.
+* Explaining the purpose behind each step.
+* Answering questions related to the lab.
+
+**Who is this service for?**
+
+* Cybersecurity Students
+* SOC Beginners
+* Blue Team Beginners
+* TryHackMe Learners
+* CyberDefenders Learners
+* Anyone who wants to understand the lab instead of simply memorizing the solution.
+------------------------
+**Title:**
+I will explain cybersecurity courses and technical topics in a simple way
+
+**Service Description:**
+
+Are you taking a cybersecurity or SOC course and having difficulty understanding the technical content?
+
+I will explain cybersecurity lessons and technical topics step by step in a simple and practical way, focusing on understanding the concepts rather than memorizing them.
+
+I can help you understand topics such as:
+
+* SOC Fundamentals
+* SIEM & Log Analysis
+* Windows Event Logs
+* Network Security
+* Detection Engineering
+* Sigma Rules
+* MITRE ATT&CK
+* Incident Response
+* Cybersecurity Fundamentals
+* Linux & Networking Basics
+
+**What you will get:**
+
+* Simple and clear explanations.
+* Practical examples when applicable.
+* Explanation of technical terminology.
+* Explanation of commands and queries when applicable.
+* Real-world SOC and cybersecurity scenarios.
+* Answers to your questions about the course or topic.
+-------------------------------------------------
+**Title:**
+I will create a custom SIEM detection rule based on your security requirements
+
+**Service Description:**
+
+I will create a custom detection rule designed to identify suspicious or malicious activity in your environment.
+
+The detection can be developed using KQL, ES|QL, or Sigma, depending on your SIEM and requirements.
+
+**What the service includes:**
+
+* Creating a custom detection rule.
+* Writing KQL, ES|QL, or Sigma rules.
+* Identifying the required log fields.
+* Explaining the detection logic.
+* Mapping the detection to the appropriate MITRE ATT&CK technique when applicable.
+* Providing basic recommendations to improve detection quality and reduce false positives.
